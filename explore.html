@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../dist/style.css">
+  </head>
+  <body>
+    <article class="flex">
+        <!-- Sidebar -->
+        <div class="w-1/5 text-white p-4 shadow-md h-screen sticky	">
+           
+      
+          <ul class="space-y-10 py-10 flex-col sticky	 ">
+            <div class="text-2xl font-bold ml-10">
+              <img src="../src/img/logo.png" />
+            </div>
+            <li class="bg-orange-400 py-4"><a href="#" class="block text-white hover:text-blue-500 flex items-center px-4"> <img src="../src/img/Vector.svg" class="px-4"> Home</a></li>
+            <li class=" py-4"><a href="#" class="block text-custom-blue font-bold hover:text[#] flex items-center px-4 "> <img src="../src/img/discover.png" class="px-4"> Explore</a></li>
+            <li class=" py-4"><a href="#" class="block text-custom-blue font-bold hover:text[#] flex items-center px-4 "> <img src="../src/img/shopping-cart.png" class="px-4"> Order <img src="../src/img/arrow-down.png" class="px-2"></a></li>
+            <li class=" py-4"><a href="#" class="block text-custom-blue font-bold hover:text[#] flex items-center px-4"> <img src="../src/img/cards.png" class="px-4"> Wallet</a></li>
+            <li class=" py-4"><a href="#" class="block text-custom-blue font-bold hover:text[#] flex items-center px-4"> <img src="../src/img/messages-3.png" class="px-4"> Inbox</a></li>
+            <li class=" py-4"><a href="#" class="block text-custom-blue font-bold hover:text[#] flex items-center px-4 "> <img src="../src/img/setting-2.png" class="px-4"> Settings </a></li>
+                        <li class=" py-4"><a href="#" class="block text-red-600 font-bold hover:text[#] flex items-center px-4 mt-10 "> <img src="../src/img/logout.svg" class="px-4"> Log Out </a></li>
+
+          </ul>
+        </div>
+    
+        <!-- User  -->
+        <div class="w-4/5 p-4">
+            <div class="mb-4">
+              <div class=" p-4">
+                <div class="flex items-center justify-between">
+                  <!-- Search Bar -->
+                  <div class="relative flex items-center">
+                    <input type="text" class="bg-gray-200 text-gray-700 placeholder-gray-500 py-2 px-4 rounded-lg focus:outline-none" placeholder="Search">
+                    <img src="../src/img/find.svg" class="h-5 w-5 absolute right-3 top-3 text-gray-600" viewBox="0 0 20 20" fill="currentColor">
+                      
+                    </svg>
+                  </div>
+          
+                  <!-- User Info -->
+                  <div class="flex items-center space-x-3">
+                    <div>
+                      <p class="text-gray-700 font-bold text-custom-text">Michael Promise</p>
+                      <p class="text-gray-600 text-custom-text ">ID: MP00101</p>
+                    </div>
+                    <button class=" text-white rounded px-40 py-1">
+                      <img src="../src/img/notification.svg" class="w-6 h-6" fill="none"  stroke="currentColor">
+                    </button>
+                    <img src="../src/img/Profile Image.png" alt="Foto do usuário" class="h-8 w-8 rounded-full">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-4/5 p-4">
+                
+                <div class="mb-4 p-4 flex items-center justify-between w-5/5">
+                  
+                  <div>
+                    <p class="font-bold text-xl text-custom-blue underline cursor-pointer ">Find Couriers in your location</p>
+                    
+                  </div>
+              
+                  <!-- Main Content-->
+                  <div class="flex items-center space-x-4 ">
+                    <p class="font-bold text-xl text-gray-500 cursor-pointer">Find available pick ups in your location</p>
+                  </div>
+                </div>
+                <div class="mb-4 p-4 flex  justify-between w-4/12">
+                    
+                    <div>
+                      <h3 class="font-bold text-3xl text-custom-blue underline">Local</h3>
+                    </div>
+                
+                 
+                    <div class="flex justify-between text-custom-blue/[0.5] font-bold text-3xl">
+                        Inter-state
+                        </div>
+                    </div>
+                  </div>
+                  <div class="flex w-3/5 h-1/5 mt-10">
+                    <div> <img class="ml-10 mr-12" src="../src/img/Profile Image.png"></div>
+                   <div class="flex flex-col mt-3"> 
+                    
+                    <div class="flex flex-row text-2xl font-bold text-custom-text ">
+                      Micheal Promise <img src="../src/img/verified.svg">
+                    </div> 
+                    
+                    <div class="flex justify-between "> <div class="font-semibold">Location:</div> <div class="text-custom-text font-bold"> Lagos, Nigeria</div></div>
+                    <div class="flex justify-between "> <div class="font-semibold">Destination:</div> <div class="text-custom-text font-bold"> Abuja, Nigeria</div></div>
+                    <div class="flex justify-between "> <div class="font-semibold">Travel Date:</div> <div class="text-custom-text font-bold mr-5"> 12/09/2022</div></div>
+                    <div class="flex justify-between "> <div class="font-semibold">Travel Time:</div> <div class="text-custom-text font-bold flex mr-12"> 7:30am</div></div>
+                  </div>
+                  <div class="flex flex-col mt-10 font-semibold ml-44">Foot Courier <button class="mt-3 bg-custom-blue border-orange-400 border-2 hover:bg-blue-600 text-white px-4 py-2 rounded-full font-semibold w-40">Contact</button></div>
+                  </div>
+                  <div class="flex w-3/5 h-1/5 mt-10">
+                    <div> <img class="ml-10 mr-12" src="../src/img/Profile Image.png"></div>
+                   <div class="flex flex-col mt-3"> 
+                    
+                    <div class="flex flex-row text-2xl font-bold text-custom-text ">
+                      Micheal Promise <img src="../src/img/verified.svg">
+                    </div> 
+                    
+                    <div class="flex justify-between "> <div class="font-semibold">Location:</div> <div class="text-custom-text font-bold"> Lagos, Nigeria</div></div>
+                    <div class="flex justify-between "> <div class="font-semibold">Destination:</div> <div class="text-custom-text font-bold"> Abuja, Nigeria</div></div>
+                    <div class="flex justify-between "> <div class="font-semibold">Travel Date:</div> <div class="text-custom-text font-bold mr-5"> 12/09/2022</div></div>
+                    <div class="flex justify-between "> <div class="font-semibold">Travel Time:</div> <div class="text-custom-text font-bold flex mr-12"> 7:30am</div></div>
+                  </div>
+                  <div class="flex flex-col mt-10 font-semibold ml-44">Driver <button class="mt-3 bg-custom-blue border-orange-400 border-2 hover:bg-blue-600 text-white px-4 py-2 rounded-full font-semibold w-40">Contact</button></div>
+                  </div>
+                  <div class="flex w-3/5 h-1/5 mt-10">
+                    <div> <img class="ml-10 mr-12" src="../src/img/Profile Image.png"></div>
+                   <div class="flex flex-col mt-3"> 
+                    
+                    <div class="flex flex-row text-2xl font-bold text-custom-text ">
+                      Micheal Promise <img src="../src/img/verified.svg">
+                    </div> 
+                    
+                    <div class="flex justify-between "> <div class="font-semibold">Location:</div> <div class="text-custom-text font-bold"> Lagos, Nigeria</div></div>
+                    <div class="flex justify-between "> <div class="font-semibold">Destination:</div> <div class="text-custom-text font-bold"> Abuja, Nigeria</div></div>
+                    <div class="flex justify-between "> <div class="font-semibold">Travel Date:</div> <div class="text-custom-text font-bold mr-5"> 12/09/2022</div></div>
+                    <div class="flex justify-between "> <div class="font-semibold">Travel Time:</div> <div class="text-custom-text font-bold flex mr-12"> 7:30am</div></div>
+                  </div>
+                  <div class="flex flex-col mt-10 font-semibold ml-44">Foot Courier <button class="mt-3 bg-custom-blue border-orange-400 border-2 hover:bg-blue-600 text-white px-4 py-2 rounded-full font-semibold w-40">Contact</button></div>
+                  </div>
+                  <div class="flex w-3/5 h-1/5 mt-10">
+                    <div> <img class="ml-10 mr-12" src="../src/img/Profile Image.png"></div>
+                   <div class="flex flex-col mt-3"> 
+                    
+                    <div class="flex flex-row text-2xl font-bold text-custom-text ">
+                      Micheal Promise <img src="../src/img/verified.svg">
+                    </div> 
+                    
+                    <div class="flex justify-between "> <div class="font-semibold">Location:</div> <div class="text-custom-text font-bold"> Lagos, Nigeria</div></div>
+                    <div class="flex justify-between "> <div class="font-semibold">Destination:</div> <div class="text-custom-text font-bold"> Abuja, Nigeria</div></div>
+                    <div class="flex justify-between "> <div class="font-semibold">Travel Date:</div> <div class="text-custom-text font-bold mr-5"> 12/09/2022</div></div>
+                    <div class="flex justify-between "> <div class="font-semibold">Travel Time:</div> <div class="text-custom-text font-bold flex mr-12"> 7:30am</div></div>
+                  </div>
+                  <div class="flex flex-col mt-10 font-semibold ml-44">Foot Courier <button class="mt-3 bg-custom-blue border-orange-400 border-2 hover:bg-blue-600 text-white px-4 py-2 rounded-full font-semibold w-40">Contact</button></div>
+                  </div>
+
+                  <div class="flex w-3/5 h-1/5 mt-10">
+                    <div> <img class="ml-10 mr-12" src="../src/img/Profile Image.png"></div>
+                   <div class="flex flex-col mt-3"> 
+                    
+                    <div class="flex flex-row text-2xl font-bold text-custom-text ">
+                      Micheal Promise <img src="../src/img/verified.svg">
+                    </div> 
+                    
+                    <div class="flex justify-between "> <div class="font-semibold">Location:</div> <div class="text-custom-text font-bold"> Lagos, Nigeria</div></div>
+                    <div class="flex justify-between "> <div class="font-semibold">Destination:</div> <div class="text-custom-text font-bold"> Abuja, Nigeria</div></div>
+                    <div class="flex justify-between "> <div class="font-semibold">Travel Date:</div> <div class="text-custom-text font-bold mr-5"> 12/09/2022</div></div>
+                    <div class="flex justify-between "> <div class="font-semibold">Travel Time:</div> <div class="text-custom-text font-bold flex mr-12"> 7:30am</div></div>
+                  </div>
+                  <div class="flex flex-col mt-10 font-semibold ml-44">Truck  <button class="mt-3 bg-custom-blue border-orange-400 border-2 hover:bg-blue-600 text-white px-4 py-2 rounded-full font-semibold w-40">Contact</button></div>
+                  </div>
+                  
+                    
+                  
+              
+              
+          </div>
+      </article>
+    </body>
+    </html>
+   
+    
+    
+  </body>
+</html>

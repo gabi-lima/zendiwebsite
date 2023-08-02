@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../dist/style.css">
+  </head>
+  <body>
+    <article class="flex">
+        <!-- Side bar - may fix it soon -->
+        <div class="w-1/5 text-white p-4 shadow-md h-screen">
+            <div class="text-2xl font-bold">
+                <img src="../src/img/logo.png" />
+              </div>
+      
+          <ul class="space-y-10 py-10 flex-col ">
+            <li class="bg-orange-400 py-4"><a href="#" class="block text-white hover:text-blue-500 flex items-center px-4 font-body"> <img src="../src/img/Vector.svg" class="px-4"> Home</a></li>
+            <li class=" py-4"><a href="#" class="block text-custom-blue font-bold hover:text[#] flex items-center px-4 font-body"> <img src="../src/img/discover.png" class="px-4"> Explore</a></li>
+            <li class=" py-4"><a href="#" class="block text-custom-blue font-bold hover:text[#] flex items-center px-4 font-body"> <img src="../src/img/shopping-cart.png" class="px-4"> Order <img src="../src/img/arrow-down.png" class="px-2"></a></li>
+            <li class=" py-4"><a href="#" class="block text-custom-blue font-bold hover:text[#] flex items-center px-4 font-body"> <img src="../src/img/cards.png" class="px-4"> Wallet</a></li>
+            <li class=" py-4"><a href="#" class="block text-custom-blue font-bold hover:text[#] flex items-center px-4 font-body"> <img src="../src/img/messages-3.png" class="px-4"> Inbox</a></li>
+            <li class=" py-4"><a href="#" class="block text-custom-blue font-bold hover:text[#] flex items-center px-4 font-body"> <img src="../src/img/setting-2.png" class="px-4"> Settings </a></li>
+            <li class=" py-4"><a href="#" class="block text-red-600 font-bold hover:text[#] flex items-center px-4 mt-10 font-body"> <img src="../src/img/logout.svg" class="px-4"> Log Out </a></li>
+            
+
+          </ul>
+        </div>
+    
+        <!-- Nav -->
+        <div class="w-4/5 p-4">
+            <div class="mb-4">
+              <div class=" p-4">
+                <div class="flex items-center justify-between">
+                  <!-- Search Bar -->
+                  <div class="relative flex items-center">
+                    <input type="text" class="bg-gray-200 text-gray-700 placeholder-gray-500 py-2 px-4 rounded-lg focus:outline-none" placeholder="Search">
+                    <img src="../src/img/find.svg" class="h-5 w-5 absolute right-3 top-3 text-gray-600" viewBox="0 0 20 20" fill="currentColor">
+                      
+                    </svg>
+                  </div>
+          
+                  <!-- User Info -->
+                  <div class="flex items-center space-x-3">
+                    <div>
+                      <p class="text-gray-700 font-bold text-custom-text font-body">Michael Promise</p>
+                      <p class="text-gray-600 text-custom-text ">ID: MP00101</p>
+                    </div>
+                    <button class=" text-white rounded px-40 py-1">
+                      <img src="../src/img/notification.svg" class="w-6 h-6" fill="none"  stroke="currentColor">
+                    </button>
+                    <img src="../src/img/Profile Image.png" alt="Foto do usuário" class="h-8 w-8 rounded-full">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-5/5 p-4">
+                <!-- Main content-->
+                <div class="mb-4 p-4 flex items-center justify-between">
+                  
+                  <div>
+                    <p class="font-bold text-2xl text-custom-text">Welcome back, Michael Promise</p>
+                    <p class=" text-red-700 font-normal">Complete your profile to get verified</p>
+                  </div>
+              
+               
+                  <div class="flex items-center space-x-4">
+                    <button class="border-custom-blue/100 border-2	hover:bg-blue-600 text-orange-400 px-4 py-2 rounded-full font-semibold">Send Parcel</button>
+                    <button class="border-orange-400/100 border-2  hover:bg-blue-600 text-custom-blue px-4 py-2 rounded-full font-semibold">Track Parcel</button>
+                    <button class="bg-custom-blue border-orange-400 border-2 hover:bg-blue-600 text-white px-4 py-2 rounded-full font-semibold">Deliver Parcel</button>
+                  </div>
+                </div>
+                <div class="mb-4 p-4 flex  justify-between">
+                   
+                    <div>
+                      <p class="font-semibold text-2xl text-custom-text">Your activities</p>
+                    </div>
+                
+                    
+                    <div class="flext justify-between">
+                        <div class="flex items-center space-x-4">
+                            <p class="text-custom-text font-semibold">My Deliveries</p> <a class="bg-custom-deliveries rounded-full p-1 flex items-center justify-center h-8 w-8"> 10</a>
+                            <p class="text-custom-text font-semibold">Pending</p> <a class="bg-custom-pending rounded-full p-1 flex items-center justify-center h-8 w-8"> 3</a>
+                            <p class="text-custom-text font-semibold">Complete</p> <a class="bg-custom-complete rounded-full p-1 flex items-center justify-center h-8 w-8"> 7</a>
+                            <p class="text-custom-text font-semibold">Available Pick ups</p> <a class="bg-custom-available rounded-full p-1 flex items-center justify-center h-8 w-8"> 7</a>
+                        </div>
+                        <div class="flex items-center space-x-4 mt-10">
+                            <p class="text-custom-text font-semibold">Sent Parcels</p> <a class="bg-custom-sent rounded-full p-1 flex items-center justify-center h-8 w-8"> 10</a>
+                            <p class="text-custom-text font-semibold">In Transit</p> <a class="bg-custom-transit rounded-full p-1 flex items-center justify-center h-8 w-8"> 3</a>
+                            <p class="text-custom-text font-semibold">Delivered</p> <a class="bg-custom-delivered rounded-full p-1 flex items-center justify-center h-8 w-8"> 7</a>
+                            <p class="text-custom-text font-semibold">Cancelled</p> <a class="bg-custom-cancelled rounded-full p-1 flex items-center justify-center h-8 w-8"> 7</a>
+                            <p class="text-custom-text font-semibold">Available Courier</p> <a class="bg-custom-courier rounded-full p-1 flex items-center justify-center h-8 w-8"> 7</a>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="grid grid-rows-6 grid-cols-5 gap-2 h-screen mt-20  ">
+                    <div class="col-start-1 col-span-3 row-start-1 row-end-4 h-4/4"> 
+
+                        <div class=" bg-blue-500 p-4 bg-custom-history h-full">
+                            <div class="flex items-center justify-between">
+                               
+                                <div class="flex items-center grid grid-cols-1">
+                                  <p class="text-gray-700 font-bold text-xl">Order History:</p>
+                                  <div class="grid grid-cols-2 gap-2">
+                                    <p class="text-gray-500">Total Orders</p>
+                                    <p class="text-gray-500">(124)</p>
+                                  </div>
+                                </div>
+                          
+                                <!-- Select Picker and Buttons -->
+                                <div class="flex items-center space-x-2">
+                                  <select class="bg-custom-history border border-black text-gray-700 py-2 px-4 rounded leading-tight focus:outline-none focus:shadow-outline">
+                                    <!-- Select Options -->
+                                    <option value="today" selected>Today</option>
+                                    <option value="option1">Option 1</option>
+                                    <option value="option2">Option 2</option>
+                                    <option value="option3">Option 3</option>
+                                  </select>
+                                  <button class="bg-custom-blue border-2 border-orange-400 :bg-blue-600 text-white py-2 px-4 rounded-full focus:outline-none focus:shadow-outline flex items-center justify-center">Request Pick Up <img class="pl-4"src="../src/img/add-circle.png" ></button>
+                                </div>
+                            </div>
+                            <div class="flex justify-center space-x-4 w-full mt-36">
+                                <div class="flex justify-center">
+                                    <!-- Delivered Parcels -->
+                                    <div class="flex flex-col items-center justify-center bg-custom-blue text-white px-10 py-8 rounded-lg w-full">
+                                      <p class="text-3xl font-bold w-50">Delivered Parcels</p>
+                                      <p class="text-2xl font-semibold mt-2 text-center text-4xl pt-12">20</p>
+                                    </div>
+                                
+                                    <div class="w-12"></div> <!-- Space Between Divs -->
+                                
+                                    <!-- Sent Parcels -->
+                                    <div class="flex flex-col  bg-custom-blue text-white px-10 py-8 rounded-lg w-full">
+                                      <p class="text-3xl font-bold w-50">Sent Parcels</p>
+                                      <p class="text-2xl font-semibold mt-2 text-center text-4xl pt-20">16</p>
+                                    </div>
+                                    </div>
+                            </div>
+                               
+                        </div>
+                    </div>
+                    <div class="col-span-2 row-span-1 h-2"> 
+                      
+                        <div class=" h-2/8  ml-10 p-4 bg-custom-notifications/[0.16]"><p class="font-bold text-custom-blue text-2xl">Notifications</p>
+                            <p class="text-custom-text mt-10">Zendit</p> 
+                            <p class="text-gray-400 mt-10" > Dear Micheal, welcome to  Zendit. 
+                                Please continue by completing your <a class="text-blue-500">profile</a>. </p>
+                        </div>
+                    </div>
+ 
+                    <div class="col-span-3 row-start-4 row-end-7 ">
+                        <div class=" bg-blue-500 p-4 bg-custom-history h-full mt-36 ">
+                          <div class="flex justify-between"> 
+                            <div class="flex flex-row gap-1"> 
+                              <p class="text-custom-blue font-bold text-2xl">Ratings and Reviews</p> <p class="text-custom-blue font-bold text-2xl">(84) </p>
+                          </div>
+                          <select class="bg-custom-history max-h-10 border border-black text-gray-700 py-2 px-4 rounded leading-tight focus:outline-none focus:shadow-outline">
+                           
+                            <option value="today" selected>Today</option>
+                            <option value="option1">Option 1</option>
+                            <option value="option2">Option 2</option>
+                            <option value="option3">Option 3</option>
+                          </select> 
+
+                        <!-- customer 1-->
+                      </div>
+                      <div class="flex justify-between mt-10 items-center">
+                        <div class="flex flex-row gap-2 items-center justify-center">
+                          <div>
+                            <img src="../src/img/Profile Image.png" class="rounded-full w-6">
+                          </div>
+                          <div class="text-2xl">
+                            Peter Davids
+                          </div>
+                        
+                        </div>
+                        <div class="text-2xl">
+                          Micheal is trustworthy
+                        </div>
+                        <div class="flex flex-row ">
+                          <img src="../src/img/star-yellow.svg" class="w-5">
+                          <img src="../src/img/star-yellow.svg" class="w-5">
+                          <img src="../src/img/star-yellow.svg" class="w-5">
+                          <img src="../src/img/star-yellow.svg" class="w-5">
+                          <img src="../src/img/star-yellow.svg" class="w-5">
+                        </div>
+                        <!-- customer 2-->
+                      </div>
+                      <div class="flex justify-between mt-10 items-center">
+                        <div class="flex flex-row gap-2 items-center justify-center">
+                          <div>
+                            <img src="../src/img/Profile Image.png" class="rounded-full w-6">
+                          </div>
+                          <div class="text-2xl">
+                            Peter Cokers
+                          </div>
+                        
+                        </div>
+                        <div class="text-2xl">
+                          Micheal is trustworthy
+                        </div>
+                        <div class="flex flex-row ">
+                          <img src="../src/img/star-yellow.svg" class="w-5">
+                          <img src="../src/img/star-yellow.svg" class="w-5">
+                          <img src="../src/img/star-yellow.svg" class="w-5">
+                          <img src="../src/img/star-yellow.svg" class="w-5">
+                          <img src="../src/img/star-black.svg" class="w-5">
+                        </div>
+                          
+                      </div>
+                      <!-- customer 3-->
+                      <div class="flex justify-between mt-10 items-center">
+                        <div class="flex flex-row gap-2 items-center justify-center">
+                          <div>
+                            <img src="../src/img/Profile Image.png" class="rounded-full w-6">
+                          </div>
+                          <div class="text-2xl">
+                            Jade Williams
+                          </div>
+                        
+                        </div>
+                        <div class="text-2xl">
+                          Micheal helped me deliver a parcel from lagos to ibadan, he was really nice
+                        </div>
+                        <div class="flex flex-row ">
+                          <img src="../src/img/star-yellow.svg" class="w-5">
+                          <img src="../src/img/star-yellow.svg" class="w-5">
+                          <img src="../src/img/star-yellow.svg" class="w-5">
+                          <img src="../src/img/star-yellow.svg" class="w-5">
+                          <img src="../src/img/star-black.svg" class="w-5">
+                        </div>
+                          
+                      </div>
+                      <!-- customer 3-->
+                      <div class="flex justify-between mt-10 items-center">
+                        <div class="flex flex-row gap-2 items-center justify-center">
+                          <div>
+                            <img src="../src/img/Profile Image.png" class="rounded-full w-6">
+                          </div>
+                          <div class="text-2xl">
+                            Jade Williams
+                          </div>
+                        
+                        </div>
+                        <div class="text-2xl">
+                          Micheal helped me deliver a parcel from lagos to ibadan, he was really nice
+                        </div>
+                        <div class="flex flex-row ">
+                          <img src="../src/img/star-yellow.svg" class="w-6">
+                          <img src="../src/img/star-yellow.svg" class="w-5">
+                          <img src="../src/img/star-yellow.svg" class="w-5">
+                          <img src="../src/img/star-yellow.svg" class="w-5">
+                          <img src="../src/img/star-black.svg" class="w-5">
+                        </div>
+                          
+                      </div>
+                      <p class="float-right text-custom-blue font-semibold text-2xl	"> View All</p>
+                    </div>
+                          
+                         
+                    </div> 
+                    <div class="col-span-2 md:col-start-4 md:col-end-9 row-start-3 row-end-7"> <!-- Começa antes da terceira horizontalmente e fica mais próxima da segunda em telas grandes (md ou maiores) -->
+                        <div class="   ml-10 p-4 bg-custom-notifications/[0.16] "><p class="font-bold text-custom-blue text-2xl">Wallet</p>
+                          <p class="text-green-600 mt-10 font-bold text-4xl">N2,406.09</p> 
+                          <div class="flex justify-between mt-10 flex-wrap"> <p class="font-bold text-custom-blue text-2xl">Your Transactions</p>
+                            <select class="bg-custom-history max-h-10 border border-black text-gray-700 py-2 px-4 rounded leading-tight focus:outline-none focus:shadow-outline">
+                              <option value="today" selected>Today</option>
+                              <option value="option1">Option 1</option>
+                              <option value="option2">Option 2</option>
+                              <option value="option3">Option 3</option>
+                            </select> 
+                            <p class="text-custom-text text-2xl m-10">Ayodele julius</p> <p class="text-green-600 text-2xl m-10">+N2,000</p>
+                            <p class="text-custom-text text-2xl m-10">Edison Mark</p> <p class="text-red-600 text-2xl m-10">-N1,500</p>
+                            <p class="text-custom-text text-2xl m-10">Withdrawal</p> <p class="text-red-600 text-2xl m-10">-N1,500</p>
+                            <p class="text-custom-text text-2xl m-10">Peter Davids</p> <p class="text-green-600 text-2xl m-10">+N1,500</p>
+                            <p class="text-custom-text text-2xl m-10">Peter Davids</p> <p class="text-green-600 text-2xl m-10">+N1,500</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                    
+                  
+              
+              
+          </div>
+      </article>
+    </body>
+    </html>
+   
+    
+    
+  </body>
+</html>
