@@ -6,9 +6,10 @@
     <title>Order</title>
     <link rel="stylesheet" href="../dist/style.css" />
     <script src="../src/js/nav.js"></script>
+    <link rel="icon" type="image/x-icon" href="../src/img/logo.png" />
   </head>
   <body>
-    <div class="w-screen">
+    <div class="w-screen flex justify-center">
       <div class="flex justify-center">
         <!-- Nav Bar-->
         <div
@@ -108,18 +109,18 @@
         >
       </div>
       <div class="relative">
-        <hr class="mt-2 w-4/5 left-0" />
+        <hr class="mt-2 w-5/5 left-0" />
       </div>
       <div
-        class="flex flex-col items-center mt-10 bg-gray-100/30 h-screen text-center"
+        class="flex flex-col items-center mt-10 bg-gray-100/30 h-screen text-center xl:w-4/6 xl:ml-80 2xl:ml-[400px]"
       >
         <!-- Products Orders-->
-        <p class="font-semibold text-custom-text mt-10 justify-center">
+        <p class="font-semibold text-custom-text mt-10">
           You have generated 2 new orders
         </p>
         <!-- Card-->
         <div
-          class="flex flex-col w-4/5 items-center h-[200px] mt-5 bg-white shadow-lg shadow-black/30 sm:flex-row sm:h-40"
+          class="flex flex-col w-4/5 items-center h-[200px] mt-5 bg-white shadow-lg shadow-black/5 sm:flex-row sm:h-40"
         >
           <div
             class="flex flex-row justify-center items-center w-full mt-5 space-x-4"
@@ -139,7 +140,7 @@
           <div class="mt-5 md:mr-10 mb-10 md:mr-10">
             <p class="italic font-semibold text-[#398EF1]">Waiting</p>
             <button
-              class="flex justify-center border-red-600 border-2 hover:text-red-800 text-red-600 flex flex-row text-center rounded-full w-40 h-8 mt-2"
+              class="flex justify-center border-red-600 border-2 hover:text-red-800 text-red-600 flex items-center text-center rounded-full w-40 h-8 mt-2 md:h-12"
             >
               Cancel order
             </button>
@@ -147,7 +148,7 @@
         </div>
         <!-- Card-->
         <div
-          class="flex flex-col w-4/5 items-center h-[200px] mt-5 bg-white shadow-lg shadow-black/30 sm:flex-row sm:h-40"
+          class="flex flex-col w-4/5 items-center h-[200px] mt-5 bg-white shadow-lg shadow-black/5 sm:flex-row sm:h-40"
         >
           <div
             class="flex flex-row justify-center items-center w-full mt-5 space-x-4"
@@ -167,7 +168,7 @@
           <div class="mt-5 md:mr-10 mb-10">
             <p class="italic font-semibold text-[#1EBD5D]">Accepted</p>
             <button
-              class="flex justify-center border-[#591BA9] border-2 hover:text-purple-600 text-[#591BA9] flex flex-row text-center rounded-full w-40 h-8 mt-2"
+              class="flex justify-center border-[#591BA9] border-2 hover:text-purple-600 text-[#591BA9] flex items-center text-center rounded-full w-40 h-8 mt-2 md:h-12"
             >
               Track
             </button>
@@ -175,7 +176,7 @@
         </div>
         <!-- Card-->
         <div
-          class="flex flex-col w-4/5 items-center h-[200px] mt-5 bg-white shadow-lg shadow-black/30 sm:flex-row sm:h-40"
+          class="flex flex-col w-4/5 items-center h-[200px] mt-5 bg-white shadow-lg shadow-black/5 sm:flex-row sm:h-40"
         >
           <div
             class="flex flex-row justify-center items-center w-full mt-5 space-x-4"
@@ -195,7 +196,7 @@
           <div class="mt-5 md:mr-10 mb-10">
             <p class="italic font-semibold text-red-600">Declined</p>
             <button
-              class="flex justify-center border-red-600 border-2 hover:text-red-800 text-red-600 flex flex-row text-center rounded-full w-40 h-8 mt-2"
+              class="flex justify-center border-red-600 border-2 hover:text-red-800 text-red-600 flex items-center rounded-full w-40 h-8 mt-2 md:h-12"
             >
               Terminate order
             </button>
@@ -206,7 +207,7 @@
         </p>
         <!-- Card -->
         <div
-          class="flex flex-col w-4/5 items-center h-[200px] mt-5 bg-white shadow-lg shadow-black/30 sm:flex-row sm:h-40"
+          class="flex flex-col w-4/5 items-center h-[200px] mt-5 bg-white shadow-lg shadow-black/5 sm:flex-row sm:h-40"
         >
           <div
             class="flex flex-row justify-center items-center w-full mt-5 space-x-4"
@@ -234,7 +235,7 @@
         </div>
         <!-- Card -->
         <div
-          class="flex flex-col w-4/5 items-center h-[200px] mt-5 bg-white shadow-lg shadow-black/30 sm:flex-row sm:h-40"
+          class="flex flex-col w-4/5 items-center h-[200px] mt-5 bg-white shadow-lg shadow-black/5 sm:flex-row sm:h-40"
         >
           <div
             class="flex flex-row justify-center items-center w-full mt-5 space-x-4"
@@ -260,6 +261,65 @@
             </p>
           </div>
         </div>
+        <p class="font-semibold text-custom-text mt-10 justify-center">
+          You have 2 new pending orders
+        </p>
+        <!-- Card -->
+        <div
+          class="flex flex-col w-4/5 items-center h-[200px] mt-5 bg-white shadow-lg shadow-black/5 sm:flex-row sm:h-40"
+        >
+          <div
+            class="flex flex-row justify-center items-center w-full mt-5 space-x-4"
+          >
+            <img src="../src/img/product1.jpeg" class="w-20 h-20" />
+            <div class="md:space-y-4">
+              <p class="text-custom-text font-semibold md:text-xl">
+                Nike Airforce sneakers (boxed)
+              </p>
+              <p class="text-sm text-gray-400">016567A33D</p>
+              <p class="text-sm text-gray-400">
+                17, Airport Road, Benin City, Nigeria
+              </p>
+              <p class="text-sm font-bold">N1500</p>
+            </div>
+          </div>
+          <div class="mt-5 md:mr-10 mb-10">
+            <p class="italic font-semibold text-red-600">Order Pending</p>
+            <button
+              class="flex justify-center border-[#398EF1] border-2 hover:text-red-800 text-[#398EF1] flex items-center text-center rounded-full w-40 h-8 mt-2 md:h-12"
+            >
+              Report
+            </button>
+          </div>
+        </div>
+        <!-- Card -->
+        <div
+          class="flex flex-col w-4/5 items-center h-[200px] mt-5 bg-white shadow-lg shadow-black/5 sm:flex-row sm:h-40"
+        >
+          <div
+            class="flex flex-row justify-center items-center w-full mt-5 space-x-4"
+          >
+            <img src="../src/img/product1.jpeg" class="w-20 h-20" />
+            <div class="md:space-y-4">
+              <p class="text-custom-text font-semibold md:text-xl">
+                Nike Airforce sneakers (boxed)
+              </p>
+              <p class="text-sm text-gray-400">016567A33D</p>
+              <p class="text-sm text-gray-400">
+                17, Airport Road, Benin City, Nigeria
+              </p>
+              <p class="text-sm font-bold">N1500</p>
+            </div>
+          </div>
+          <div class="mt-5 md:mr-10 mb-10">
+            <p class="italic font-semibold text-red-600">Order Pending</p>
+            <button
+              class="flex justify-center border-[#398EF1] border-2 hover:text-red-800 text-[#398EF1] flex items-center text-center rounded-full w-40 h-8 mt-2 md:h-12"
+            >
+              Report
+            </button>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -278,10 +338,10 @@
       </div>
 
       <ul class="space-y-10 py-10 flex-col">
-        <li class="bg-orange-400 py-4">
+        <li class="py-4">
           <a
             href="#"
-            class="block text-white hover:text-blue-500 flex items-center px-4 font-body"
+            class="block text-custom-blue hover:text-blue-500 flex items-center px-4 font-body"
           >
             <img src="../src/img/Vector.svg" class="px-4" /> Home</a
           >
@@ -294,10 +354,10 @@
             <img src="../src/img/discover.png" class="px-4" /> Explore</a
           >
         </li>
-        <li class="py-4">
+        <li class="py-4 bg-orange-400">
           <a
             href="#"
-            class="block text-custom-blue font-bold hover:text-orange-400 flex items-center px-4 font-body"
+            class="block text-white font-bold hover:text-orange-400 flex items-center px-4 font-body"
           >
             <img src="../src/img/shopping-cart.png" class="px-4" /> Order
             <img src="../src/img/arrow-down.png" class="px-2"
