@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order</title>
+    <link rel="stylesheet" href="../dist/style.css" />
+    <script src="../src/js/nav.js"></script>
+  </head>
+  <body>
+    <div class="w-screen">
+      <div class="flex justify-center">
+        <!-- Nav Bar-->
+        <div
+          class="w-full flex relative space-x-2 sm:space-x-20 md:space-x-40 lg:space-x-60 2xl:space-x-[500px] items-center ml-5 mt-2 md:items-center"
+          id="nav"
+        >
+          <span class="cursor-pointer xl:hidden" id="bars" onclick="Open()"
+            ><img src="../src/img/bars-solid.svg" class="w-12" />
+          </span>
+          <div class="relative flex items-center">
+            <input
+              type="text"
+              class="bg-gray-200 text-gray-700 placeholder-gray-500 py-2 px-4 rounded-md focus:outline-none"
+              placeholder="Search"
+              id="search"
+            />
+            <img
+              src="../src/img/find.svg"
+              class="h-5 w-5 absolute right-3 top-3 text-gray-600"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            />
+          </div>
+          <div class="flex items-center w-full space-x-4">
+            <div>
+              <p
+                class="text-gray-700 font-bold text-custom-text text-sm hidden sm:flex"
+              >
+                Michael Promise
+              </p>
+            </div>
+            <button class="text-white rounded py-1">
+              <img
+                src="../src/img/notification.svg"
+                class="w-8 h-8"
+                fill="none"
+                stroke="currentColor"
+              />
+            </button>
+            <img
+              src="../src/img/Profile Image.png"
+              alt="Foto do usuário"
+              class="h-8 w-8 rounded-full"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Content Div -->
+    <div class="w-full" id="bodyhide">
+      <div class="h-10 flex justify-between items-center mt-10">
+        <!-- Create post button-->
+        <button
+          class="absolute right-10 2xl:mr-[200px] mt-3 bg-custom-blue border-orange-400 border-2 hover:bg-orange-400 hover:text-custom-blue text-white pl-6 py-2 flex flex-row text-center rounded-full w-40"
+        >
+          Create post
+          <img
+            src="../src/img/arrow-down-white.png"
+            class="w-6 hover:text-custom-blue"
+          />
+        </button>
+      </div>
+      <div
+        class="w-20 flex flex-row space-x-6 ml-4 mt-10 sm:space-x-60 xl:ml-[420px]"
+      >
+        <!-- Orders info  -->
+
+        <p
+          class="font-semibold underline underline-offset-4 text-custom-blue cursor-pointer"
+        >
+          Sender
+        </p>
+        <p class="font-semibold text-gray-400 cursor-pointer">Courier</p>
+      </div>
+      <div
+        class="flex justify-center space-x-2 text-sm mt-2 mr-10 sm:mr-[170px] sm:space-x-6 md:mr-[290px] lg:mr-[550px] xl:ml-[0px] xl:mr-[0px] 2xl:mr-[640px]"
+      >
+        <p class="font-bold text-custom-blue cursor-pointer">All</p>
+
+        <p class="text-custom-text font-semibold cursor-pointer">In Transit</p>
+        <a
+          class="bg-custom-pending rounded-full p-1 flex items-center justify-center h-8 w-8"
+        >
+          2</a
+        >
+        <p class="text-custom-text font-semibold cursor-pointer">Declined</p>
+        <a
+          class="bg-custom-complete rounded-full p-1 flex items-center justify-center h-8 w-8 cursor-pointer"
+        >
+          0</a
+        >
+        <p class="text-custom-text font-semibold cursor-pointer">Completed</p>
+        <a
+          class="bg-custom-available rounded-full p-1 flex items-center justify-center h-8 w-8 cursor-pointer"
+        >
+          0</a
+        >
+      </div>
+      <div class="relative">
+        <hr class="mt-2 w-4/5 left-0" />
+      </div>
+      <div
+        class="flex flex-col items-center mt-10 bg-gray-100/30 h-screen text-center"
+      >
+        <!-- Products Orders-->
+        <p class="font-semibold text-custom-text mt-10 justify-center">
+          You have generated 2 new orders
+        </p>
+        <!-- Card-->
+        <div
+          class="flex flex-col w-4/5 items-center h-[200px] mt-5 bg-white shadow-lg shadow-black/30 sm:flex-row sm:h-40"
+        >
+          <div
+            class="flex flex-row justify-center items-center w-full mt-5 space-x-4"
+          >
+            <img src="../src/img/product1.jpeg" class="w-20 h-20" />
+            <div class="md:space-y-4">
+              <p class="text-custom-text font-semibold md:text-xl">
+                Nike Airforce sneakers (boxed)
+              </p>
+              <p class="text-sm text-gray-400">016567A33D</p>
+              <p class="text-sm text-gray-400">
+                17, Airport Road, Benin City, Nigeria
+              </p>
+              <p class="text-sm font-bold">N1500</p>
+            </div>
+          </div>
+          <div class="mt-5 md:mr-10 mb-10 md:mr-10">
+            <p class="italic font-semibold text-[#398EF1]">Waiting</p>
+            <button
+              class="flex justify-center border-red-600 border-2 hover:text-red-800 text-red-600 flex flex-row text-center rounded-full w-40 h-8 mt-2"
+            >
+              Cancel order
+            </button>
+          </div>
+        </div>
+        <!-- Card-->
+        <div
+          class="flex flex-col w-4/5 items-center h-[200px] mt-5 bg-white shadow-lg shadow-black/30 sm:flex-row sm:h-40"
+        >
+          <div
+            class="flex flex-row justify-center items-center w-full mt-5 space-x-4"
+          >
+            <img src="../src/img/product1.jpeg" class="w-20 h-20" />
+            <div class="md:space-y-4">
+              <p class="text-custom-text font-semibold md:text-xl">
+                Nike Airforce sneakers (boxed)
+              </p>
+              <p class="text-sm text-gray-400">016567A33D</p>
+              <p class="text-sm text-gray-400">
+                17, Airport Road, Benin City, Nigeria
+              </p>
+              <p class="text-sm font-bold">N1500</p>
+            </div>
+          </div>
+          <div class="mt-5 md:mr-10 mb-10">
+            <p class="italic font-semibold text-[#1EBD5D]">Accepted</p>
+            <button
+              class="flex justify-center border-[#591BA9] border-2 hover:text-purple-600 text-[#591BA9] flex flex-row text-center rounded-full w-40 h-8 mt-2"
+            >
+              Track
+            </button>
+          </div>
+        </div>
+        <!-- Card-->
+        <div
+          class="flex flex-col w-4/5 items-center h-[200px] mt-5 bg-white shadow-lg shadow-black/30 sm:flex-row sm:h-40"
+        >
+          <div
+            class="flex flex-row justify-center items-center w-full mt-5 space-x-4"
+          >
+            <img src="../src/img/product1.jpeg" class="w-20 h-20" />
+            <div class="md:space-y-4">
+              <p class="text-custom-text font-semibold md:text-xl">
+                Nike Airforce sneakers (boxed)
+              </p>
+              <p class="text-sm text-gray-400">016567A33D</p>
+              <p class="text-sm text-gray-400">
+                17, Airport Road, Benin City, Nigeria
+              </p>
+              <p class="text-sm font-bold">N1500</p>
+            </div>
+          </div>
+          <div class="mt-5 md:mr-10 mb-10">
+            <p class="italic font-semibold text-red-600">Declined</p>
+            <button
+              class="flex justify-center border-red-600 border-2 hover:text-red-800 text-red-600 flex flex-row text-center rounded-full w-40 h-8 mt-2"
+            >
+              Terminate order
+            </button>
+          </div>
+        </div>
+        <p class="font-semibold text-custom-text mt-10 justify-center">
+          You have 2 new completed orders
+        </p>
+        <!-- Card -->
+        <div
+          class="flex flex-col w-4/5 items-center h-[200px] mt-5 bg-white shadow-lg shadow-black/30 sm:flex-row sm:h-40"
+        >
+          <div
+            class="flex flex-row justify-center items-center w-full mt-5 space-x-4"
+          >
+            <img src="../src/img/product1.jpeg" class="w-20 h-20" />
+            <div class="md:space-y-4">
+              <p class="text-custom-text font-semibold md:text-xl">
+                Nike Airforce sneakers (boxed)
+              </p>
+              <p class="text-sm text-gray-400">016567A33D</p>
+              <p class="text-sm text-gray-400">
+                17, Airport Road, Benin City, Nigeria
+              </p>
+              <p class="text-sm font-bold">N1500</p>
+            </div>
+          </div>
+          <div class="mt-5 md:mr-10 mb-10">
+            <p class="italic font-semibold text-[#1EBD5D]">Order Completed</p>
+            <p
+              class="flex justify-center hover:text-red-800 text-custom-blue mt-2 cursor-pointer"
+            >
+              Leave a Review
+            </p>
+          </div>
+        </div>
+        <!-- Card -->
+        <div
+          class="flex flex-col w-4/5 items-center h-[200px] mt-5 bg-white shadow-lg shadow-black/30 sm:flex-row sm:h-40"
+        >
+          <div
+            class="flex flex-row justify-center items-center w-full mt-5 space-x-4"
+          >
+            <img src="../src/img/product1.jpeg" class="w-20 h-20" />
+            <div class="md:space-y-4">
+              <p class="text-custom-text font-semibold md:text-xl">
+                Nike Airforce sneakers (boxed)
+              </p>
+              <p class="text-sm text-gray-400">016567A33D</p>
+              <p class="text-sm text-gray-400">
+                17, Airport Road, Benin City, Nigeria
+              </p>
+              <p class="text-sm font-bold">N1500</p>
+            </div>
+          </div>
+          <div class="mt-5 md:mr-10 mb-10">
+            <p class="italic font-semibold text-[#1EBD5D]">Order Completed</p>
+            <p
+              class="flex italic justify-center hover:text-red-800 text-[#398EF1] mt-2 cursor-pointer"
+            >
+              Reviewed
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Side bar  -->
+    <div
+      class="transition-all duration-300 bg-white text-white p-4 shadow-md h-screen fixed top-0 left-0 bottom-0 p-2 w-full xl:w-1/5 overflow-y-auto text-center hidden xl:inline"
+      id="sidebar"
+    >
+      <div
+        class="text-2xl font-bold text-custom-blue flex flex-row justify-between items-center"
+      >
+        <img src="../src/img/logo.png" />
+        <span onclick="Close()" class="xl:hidden"
+          ><img src="../src/img/circle-xmark-solid.svg" class="w-10"
+        /></span>
+      </div>
+
+      <ul class="space-y-10 py-10 flex-col">
+        <li class="bg-orange-400 py-4">
+          <a
+            href="#"
+            class="block text-white hover:text-blue-500 flex items-center px-4 font-body"
+          >
+            <img src="../src/img/Vector.svg" class="px-4" /> Home</a
+          >
+        </li>
+        <li class="py-4">
+          <a
+            href="#"
+            class="block text-custom-blue font-bold hover:text-orange-400 flex items-center px-4 font-body"
+          >
+            <img src="../src/img/discover.png" class="px-4" /> Explore</a
+          >
+        </li>
+        <li class="py-4">
+          <a
+            href="#"
+            class="block text-custom-blue font-bold hover:text-orange-400 flex items-center px-4 font-body"
+          >
+            <img src="../src/img/shopping-cart.png" class="px-4" /> Order
+            <img src="../src/img/arrow-down.png" class="px-2"
+          /></a>
+        </li>
+        <li class="py-4">
+          <a
+            href="#"
+            class="block text-custom-blue font-bold hover:text-orange-400 flex items-center px-4 font-body"
+          >
+            <img src="../src/img/cards.png" class="px-4" /> Wallet</a
+          >
+        </li>
+        <li class="py-4">
+          <a
+            href="#"
+            class="block text-custom-blue font-bold hover:text-orange-400 flex items-center px-4 font-body"
+          >
+            <img src="../src/img/messages-3.png" class="px-4" /> Inbox</a
+          >
+        </li>
+        <li class="py-4">
+          <a
+            href="#"
+            class="block text-custom-blue font-bold hover:text-orange-400 flex items-center px-4 font-body"
+          >
+            <img src="../src/img/setting-2.png" class="px-4" /> Settings
+          </a>
+        </li>
+        <li class="py-4">
+          <a
+            href="#"
+            class="block text-red-600 font-bold hover:text-orange-400 flex items-center px-4 mt-10 font-body"
+          >
+            <img src="../src/img/logout.svg" class="px-4" /> Log Out
+          </a>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
