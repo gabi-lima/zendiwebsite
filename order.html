@@ -6,10 +6,27 @@
     <title>Order</title>
     <link rel="stylesheet" href="../dist/style.css" />
     <script src="../src/js/nav.js"></script>
+    <script src="../src/js/modal.js"></script>
+
     <link rel="icon" type="image/x-icon" href="../src/img/logo.png" />
   </head>
   <body>
     <div class="w-screen flex justify-center">
+      <dialog
+        id="modal"
+        class="border-none w-4/5 backdrop:bg-black/30 backdrop:blur"
+      >
+        <h1 class="text-custom-text font-bold text-center text-xl">
+          Please Review your Experience
+        </h1>
+        <div>
+          <h1 class="text-custom-text font-bold ml-1 text-xl">Courier</h1>
+          <p>Please rate the courier based on the following</p>
+          <p>Punctuality</p>
+          <p>Honesty</p>
+          <p>Parcel Handling</p>
+        </div>
+      </dialog>
       <div class="flex justify-center">
         <!-- Nav Bar-->
         <div
@@ -63,6 +80,7 @@
       <div class="h-10 flex justify-between items-center mt-10">
         <!-- Create post button-->
         <button
+          onclick="OpenModal()"
           class="absolute right-10 2xl:mr-[200px] mt-3 bg-custom-blue border-orange-400 border-2 hover:bg-orange-400 hover:text-custom-blue text-white pl-6 py-2 flex flex-row text-center rounded-full w-40"
         >
           Create post
