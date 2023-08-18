@@ -20,87 +20,89 @@
   </head>
   <body>
     <div class="w-screen flex justify-center">
-      <dialog
-        id="modal"
-        class="border-none w-4/5 backdrop:bg-black/30 rounded-md"
-      >
-        <h1 class="text-custom-text font-bold text-center text-2xl">
+      <dialog id="modal" class="w-4/5 backdrop:bg-black/30 rounded-md">
+        <h1 class="text-custom-text font-bold text-center text-2xl mt-10">
           Please Review your Experience
         </h1>
-        <div class="ml-1 grid grid-rows-6">
-          <h1 class="text-custom-text font-bold text-xl mt-10">Courier</h1>
-          <p class="text-custom-text font-bold text-lg mt-2">
-            Please rate the courier based on the following
-          </p>
-          <div
-            class="grid grid-cols-2 grid-rows-1 items-center space-x-2 text-gray-400"
-          >
-            <p class="text-custom-text text-md font-bold ml-5">Punctuality</p>
-            <div class="stars">
-              <a
-                class="fa-regular fa-star cursor-pointer transition-all duration-300"
-              ></a>
-              <a
-                class="fa-regular fa-star cursor-pointer transition-all duration-300"
-              ></a>
-              <a
-                class="fa-regular fa-star cursor-pointer transition-all duration-300"
-              ></a>
-              <a
-                class="fa-regular fa-star cursor-pointer transition-all duration-300"
-              ></a>
-              <a
-                class="fa-regular fa-star cursor-pointer transition-all duration-300"
-              ></a>
-            </div>
-          </div>
-          <div
-            class="grid grid-cols-2 grid-rows-1 items-center space-x-2 text-gray-400"
-          >
-            <p class="text-custom-text text-md font-bold ml-5">Honesty</p>
-            <div class="stars2">
-              <a
-                class="fa-regular fa-star cursor-pointer transition-all duration-300"
-              ></a>
-              <a
-                class="fa-regular fa-star cursor-pointer transition-all duration-300"
-              ></a>
-              <a
-                class="fa-regular fa-star cursor-pointer transition-all duration-300"
-              ></a>
-              <a
-                class="fa-regular fa-star cursor-pointer transition-all duration-300"
-              ></a>
-              <a
-                class="fa-regular fa-star cursor-pointer transition-all duration-300"
-              ></a>
-            </div>
-          </div>
-          <div
-            class="grid grid-cols-2 grid-rows-1 items-center space-x-2 text-gray-400"
-          >
-            <p class="text-custom-text text-md font-bold ml-5">
-              Parcel Handling
+        <div class="ml-1 grid grid-rows-3">
+          <div>
+            <h1 class="text-custom-text font-bold text-xl mt-10">Courier</h1>
+            <p class="text-custom-text font-semibold text-md mt-2">
+              Please rate the courier based on the following
             </p>
-            <div class="stars3">
-              <a
-                class="fa-regular fa-star cursor-pointer transition-all duration-300"
-              ></a>
-              <a
-                class="fa-regular fa-star cursor-pointer transition-all duration-300"
-              ></a>
-              <a
-                class="fa-regular fa-star cursor-pointer transition-all duration-300"
-              ></a>
-              <a
-                class="fa-regular fa-star cursor-pointer transition-all duration-300"
-              ></a>
-              <a
-                class="fa-regular fa-star cursor-pointer transition-all duration-300"
-              ></a>
+            <div
+              class="grid grid-cols-2 2xl:grid-cols-6 grid-rows-1 items-center space-x-2 text-gray-400"
+            >
+              <p class="text-custom-text text-sm font-semibold ml-5">
+                Punctuality
+              </p>
+              <div class="stars">
+                <a
+                  class="fa-regular fa-star cursor-pointer transition-all duration-300"
+                ></a>
+                <a
+                  class="fa-regular fa-star cursor-pointer transition-all duration-300"
+                ></a>
+                <a
+                  class="fa-regular fa-star cursor-pointer transition-all duration-300"
+                ></a>
+                <a
+                  class="fa-regular fa-star cursor-pointer transition-all duration-300"
+                ></a>
+                <a
+                  class="fa-regular fa-star cursor-pointer transition-all duration-300"
+                ></a>
+              </div>
+            </div>
+            <div
+              class="grid grid-cols-2 2xl:grid-cols-6 grid-rows-1 items-center space-x-2 text-gray-400"
+            >
+              <p class="text-custom-text text-sm font-semibold ml-5">Honesty</p>
+              <div class="stars2">
+                <a
+                  class="fa-regular fa-star cursor-pointer transition-all duration-300"
+                ></a>
+                <a
+                  class="fa-regular fa-star cursor-pointer transition-all duration-300"
+                ></a>
+                <a
+                  class="fa-regular fa-star cursor-pointer transition-all duration-300"
+                ></a>
+                <a
+                  class="fa-regular fa-star cursor-pointer transition-all duration-300"
+                ></a>
+                <a
+                  class="fa-regular fa-star cursor-pointer transition-all duration-300"
+                ></a>
+              </div>
+            </div>
+            <div
+              class="grid grid-cols-2 2xl:grid-cols-6 grid-rows-1 items-center space-x-2 text-gray-400"
+            >
+              <p class="text-custom-text text-sm font-semibold ml-5">
+                Parcel Handling
+              </p>
+              <div class="stars3">
+                <a
+                  class="fa-regular fa-star cursor-pointer transition-all duration-300"
+                ></a>
+                <a
+                  class="fa-regular fa-star cursor-pointer transition-all duration-300"
+                ></a>
+                <a
+                  class="fa-regular fa-star cursor-pointer transition-all duration-300"
+                ></a>
+                <a
+                  class="fa-regular fa-star cursor-pointer transition-all duration-300"
+                ></a>
+                <a
+                  class="fa-regular fa-star cursor-pointer transition-all duration-300"
+                ></a>
+              </div>
             </div>
           </div>
-          <div class="flex flex-col items-center">
+
+          <div class="flex flex-col items-center mt-10">
             <h2>Have something to say? (0 of 100)</h2>
             <textarea
               maxlength="100"
@@ -113,13 +115,13 @@
           <div class="flex justify-between">
             <button
               onclick="CloseModal()"
-              class="2xl:mr-[200px] mt-3 bg-[#DDE0E9] border-custom-blue border-2 hover:bg-orange-400 text-custom-blue rounded-full w-40 h-12"
+              class="mt-3 bg-[#DDE0E9] border-custom-blue border-2 hover:bg-orange-400 text-custom-blue rounded-full w-40 h-12"
             >
               Cancel
             </button>
             <button
               onclick="CloseModal()"
-              class="2xl:mr-[200px] mt-3 bg-custom-blue border-orange-400 border-2 hover:bg-orange-400 hover:text-custom-blue text-white rounded-full w-40"
+              class="mt-3 bg-custom-blue border-orange-400 border-2 hover:bg-orange-400 hover:text-custom-blue text-white rounded-full w-40 h-12"
             >
               Submit
             </button>
@@ -190,7 +192,7 @@
         </button>
       </div>
       <div
-        class="w-20 flex flex-row space-x-6 ml-4 mt-10 sm:space-x-60 xl:ml-[420px]"
+        class="w-20 flex flex-row space-x-6 ml-4 mt-10 sm:space-x-60 xl:ml-[420px] 2xl:ml-[390px]"
       >
         <!-- Orders info  -->
 
@@ -225,8 +227,8 @@
           0</a
         >
       </div>
-      <div class="relative">
-        <hr class="mt-2 w-5/5 left-0" />
+      <div class="md:flex md:justify-center">
+        <hr class="mt-2 w-5/5 md:w-[68%] ml-[200px]" />
       </div>
       <div
         class="flex flex-col items-center mt-10 bg-gray-100/30 h-screen text-center xl:w-4/6 xl:ml-80 2xl:ml-[400px]"
