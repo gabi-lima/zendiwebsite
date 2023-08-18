@@ -1,6 +1,12 @@
+modal = document.querySelector("#modal");
+inputText = document.getElementById("rate");
 function OpenModal() {
-  modal = document.querySelector("#modal");
   modal.showModal();
+  inputText.value = "";
+}
+function CloseModal() {
+  modal.close();
+  inputText.value = "";
 }
 
 const stars = document.querySelectorAll(".stars a");

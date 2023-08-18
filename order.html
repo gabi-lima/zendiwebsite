@@ -100,6 +100,30 @@
               ></a>
             </div>
           </div>
+          <div class="flex flex-col items-center">
+            <h2>Have something to say? (0 of 100)</h2>
+            <textarea
+              maxlength="100"
+              name="rate"
+              id="rate"
+              class="border border-black rounded-sm focus:border-blue-500 w-[300px] h-[80px]"
+            >
+            </textarea>
+          </div>
+          <div class="flex justify-between">
+            <button
+              onclick="CloseModal()"
+              class="2xl:mr-[200px] mt-3 bg-[#DDE0E9] border-custom-blue border-2 hover:bg-orange-400 text-custom-blue rounded-full w-40 h-12"
+            >
+              Cancel
+            </button>
+            <button
+              onclick="CloseModal()"
+              class="2xl:mr-[200px] mt-3 bg-custom-blue border-orange-400 border-2 hover:bg-orange-400 hover:text-custom-blue text-white rounded-full w-40"
+            >
+              Submit
+            </button>
+          </div>
         </div>
       </dialog>
       <div class="flex justify-center">
