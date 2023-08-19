@@ -108,8 +108,9 @@
           </div>
 
           <div class="flex flex-col items-center mt-10 2xl:items-start ml-10">
-            <h2>Have something to say? (0 of 100)</h2>
+            <h2>Have something to say? (<a id="length">0</a> of 100)</h2>
             <textarea
+              oninput="rateLength()"
               maxlength="100"
               name="rate"
               id="rate"
@@ -186,7 +187,6 @@
       <div class="h-10 flex justify-between items-center mt-10">
         <!-- Create post button-->
         <button
-          onclick="OpenModal()"
           class="absolute right-10 2xl:mr-[200px] mt-3 bg-custom-blue border-orange-400 border-2 hover:bg-orange-400 hover:text-custom-blue text-white pl-6 py-2 flex flex-row text-center rounded-full w-40"
         >
           Create post
@@ -351,6 +351,7 @@
           <div class="mt-5 md:mr-10 mb-10">
             <p class="italic font-semibold text-[#1EBD5D]">Order Completed</p>
             <p
+              onclick="OpenModal()"
               class="flex justify-center hover:text-red-800 text-custom-blue mt-2 cursor-pointer"
             >
               Leave a Review

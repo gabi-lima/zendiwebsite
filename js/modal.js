@@ -1,12 +1,25 @@
 modal = document.querySelector("#modal");
 inputText = document.getElementById("rate");
+textLength = document.getElementById("length");
+
 function OpenModal() {
   modal.showModal();
   inputText.value = "";
+  textValue = inputText.value;
+  lengthValue = textValue.length;
+  textLength.innerHTML = lengthValue;
 }
 function CloseModal() {
   modal.close();
   inputText.value = "";
+  textValue = inputText.value;
+  lengthValue = textValue.length;
+  textLength.innerHTML = lengthValue;
+}
+function rateLength() {
+  textValue = inputText.value;
+  lengthValue = textValue.length;
+  textLength.innerHTML = lengthValue;
 }
 
 const stars = document.querySelectorAll(".stars a");
