@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../dist/style.css" />
+    <link rel="icon" type="image/x-icon" href="../src/img/logo.png" />
+    <script src="../src/js/modal-wallet.js"></script>
+    <title>Wallet</title>
+  </head>
+  <body>
+    <div class="w-screen h-[900px]">
+      <!-- Modal -->
+      <dialog id="modal">Olá!</dialog>
+      <!-- Content -->
+      <div class="grid grid-cols-12 grid-rows-7 w-full mt-[200px] h-[90%]">
+        <div
+          class="col-start-4 bg-[#FBFBFB] col-end-12 row-start-1 row-end-6 grid grid-cols-12 grid-rows-6 h-[900px]"
+        >
+          <div class="col-start-1 mt-[34px] ml-[34px]">
+            <h1 class="text-custom-text text-3xl font-bold">Wallet</h1>
+            <div
+              class="grid grid-cols-2 w-80 col-start-1 row-start-2 bg-white mt-[34px] w-[694px] h-[265px] rounded-md shadow-xl"
+            >
+              <h2
+                class="col-start-1 text-custom-text text-xl font-bold ml-[16px] mt-[20px]"
+              >
+                Wallet ID: 058213AD
+              </h2>
+              <h2
+                class="col-start-1 text-custom-text text-xl font-bold ml-[16px]"
+              >
+                Bal. N6,500
+              </h2>
+              <button
+                class="col-start-1 bg-orange-400 cursor-pointer hover:bg-custom-blue hover:text-black text-white rounded-full w-40 h-12 ml-[14px]"
+              >
+                Request payment
+              </button>
+              <div
+                class="col-start-2 row-start-1 flex flex-row text-center mt-[20px]"
+              >
+                <button class="cursor-pointer text-white rounded py-1 w-8 h-8">
+                  <img src="../src/img/add-circle.svg" class="w-8 h-8" />
+                </button>
+                <h2
+                  class="text-custom-text text-xl font-semibold cursor-pointer"
+                >
+                  Fund wallet
+                </h2>
+              </div>
+              <div class="relative row-start-2 col-start-2">
+                <div class="flex flex-row">
+                  <h2 class="text-custom-text text-xl font-medium text-center">
+                    Coupon:
+                  </h2>
+                  <input
+                    type="text"
+                    class="bg-[#E6EAEE59] w-[150px] h-[40px] text-center rounded-md ml-2"
+                    placeholder="Enter coupon code "
+                  />
+                </div>
+                <h2 class="ml-[188px] text-custom-blue/60 cursor-pointer">
+                  Submit
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-start-1 row-start-3 mt-[120px] ml-[34px] row-end-6 bg-white shadow-lg col-end-12 rounded-md grid grid-cols-6 grid-rows-6 h-"
+          >
+            <h1
+              class="text-custom-blue text-2xl font-bold col-span-2 mt-[24px] ml-[24px]"
+            >
+              Payment history
+            </h1>
+            <div
+              class="ml-[24px] row-start-2 col-span-6 grid grid-cols-12 grid-rows-6 text-[#6F6D6D] h-[300px]"
+            >
+              <h2 class="col-start-1 col-span-2 text-xl">Account Owner</h2>
+              <div class="col-start-1 row-start-2 row-end-6 col-end-3">
+                <p class="text-xl">Adam Fard</p>
+                <p class="text-xl">Adam Fard</p>
+                <p class="text-xl">Adam Fard</p>
+                <p class="text-xl">Adam Fard</p>
+                <p class="text-xl">Adam Fard</p>
+              </div>
+              <h2 class="col-start-4 text-xl">Date</h2>
+              <div class="col-start-4 row-start-2 row-end-6 col-end-6">
+                <p class="text-xl">June 15, 2022</p>
+                <p class="text-xl">June 15, 2022</p>
+                <p class="text-xl">June 15, 2022</p>
+                <p class="text-xl">June 15, 2022</p>
+                <p class="text-xl">June 15, 2022</p>
+              </div>
+              <h2 class="col-start-6 text-xl">Time</h2>
+              <div class="col-start-6 row-start-2 row-end-6 col-end-8">
+                <p class="text-xl">10:45:16 AM</p>
+                <p class="text-xl">10:45:16 AM</p>
+                <p class="text-xl">10:45:16 AM</p>
+                <p class="text-xl">10:45:16 AM</p>
+                <p class="text-xl">10:45:16 AM</p>
+              </div>
+              <h2 class="col-start-8 col-end-11 text-xl">Amount Requested</h2>
+              <div class="col-start-8 row-start-2 row-end-6 col-end-11">
+                <p class="text-xl">$25</p>
+                <p class="text-xl">$25</p>
+                <p class="text-xl">$25</p>
+                <p class="text-xl">$25</p>
+                <p class="text-xl">$25</p>
+              </div>
+              <h2 class="col-start-11 text-xl">Status</h2>
+              <div class="col-start-11 row-start-2 row-end-6">
+                <p class="text-xl font-normal text-red-600">Pending</p>
+                <p class="text-xl font-normal text-[#398EF1]">Successful</p>
+                <p class="text-xl font-normal text-[#398EF1]">Successful</p>
+                <p class="text-xl font-normal text-[#398EF1]">Successful</p>
+                <p class="text-xl font-normal text-[#398EF1]">Successful</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Sidebar -->
+      <div
+        class="transition-all duration-300 bg-white text-white p-4 shadow-md h-screen fixed top-0 left-0 bottom-0 p-2 w-full xl:w-1/5 overflow-y-auto text-center hidden xl:inline"
+        id="sidebar"
+      >
+        <div
+          class="text-2xl font-bold text-custom-blue flex flex-row justify-between items-center"
+        >
+          <img src="../src/img/logo.png" />
+          <span onclick="Close()" class="xl:hidden"
+            ><img src="../src/img/circle-xmark-solid.svg" class="w-10"
+          /></span>
+        </div>
+
+        <ul class="space-y-10 py-10 flex-col">
+          <li class="py-4">
+            <a
+              href="#"
+              class="block text-custom-blue hover:text-blue-500 flex items-center px-4 font-body"
+            >
+              <img src="../src/img/Vector.svg" class="px-4" /> Home</a
+            >
+          </li>
+          <li class="py-4">
+            <a
+              href="#"
+              class="block text-custom-blue font-bold hover:text-orange-400 flex items-center px-4 font-body"
+            >
+              <img src="../src/img/discover.png" class="px-4" /> Explore</a
+            >
+          </li>
+          <li class="py-4">
+            <a
+              href="#"
+              class="block text-custom-blue font-bold hover:text-orange-400 flex items-center px-4 font-body"
+            >
+              <img src="../src/img/shopping-cart.png" class="px-4" /> Order
+              <img src="../src/img/arrow-down.png" class="px-2"
+            /></a>
+          </li>
+          <li class="py-4 bg-orange-400">
+            <a
+              href="#"
+              class="block text-white font-bold hover:text-orange-400 flex items-center px-4 font-body"
+            >
+              <img src="../src/img/cards-white.svg" class="px-4" /> Wallet</a
+            >
+          </li>
+          <li class="py-4">
+            <a
+              href="#"
+              class="block text-custom-blue font-bold hover:text-orange-400 flex items-center px-4 font-body"
+            >
+              <img src="../src/img/messages-3.png" class="px-4" /> Inbox</a
+            >
+          </li>
+          <li class="py-4">
+            <a
+              href="#"
+              class="block text-custom-blue font-bold hover:text-orange-400 flex items-center px-4 font-body"
+            >
+              <img src="../src/img/setting-2.png" class="px-4" /> Settings
+            </a>
+          </li>
+          <li class="py-4">
+            <a
+              href="#"
+              class="block text-red-600 font-bold hover:text-orange-400 flex items-center px-4 mt-10 font-body"
+            >
+              <img src="../src/img/logout.svg" class="px-4" /> Log Out
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
